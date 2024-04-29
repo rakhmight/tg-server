@@ -1,0 +1,29 @@
+{
+  "name": "tg-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "nodemon build/server.js",
+    "start": "node build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.4.2",
+    "fastify": "^4.25.1",
+    "fastify-plugin": "^4.5.1",
+    "fastify-socket.io": "^5.0.0",
+    "nodemon": "^3.0.2",
+    "pino-pretty": "^10.3.0",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@types/pino": "^7.0.5",
+    "types-fastify-socket.io": "^0.0.1",
+    "typescript": "^5.3.3"
+  }
+}
